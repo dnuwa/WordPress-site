@@ -1,0 +1,1 @@
+<div class="col-<?php echo is_active_sidebar('primary-sidebar') ? 8 : 12?> card-container">Sorry, no products matched your criteria. </p>

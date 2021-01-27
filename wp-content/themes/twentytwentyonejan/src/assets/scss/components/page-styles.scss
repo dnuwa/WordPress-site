@@ -1,0 +1,137 @@
+$snow: #ffffff;
+$font-stack: roboto-condensed;
+$primary: #1f74de;
+$danger: #cf0152;
+$base: 8px;
+$double: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $snow;
+  font-family: font-stack;
+}
+
+.footer-bg-dark{
+  background-color: red;
+}
+
+.footer-bg-light{
+  background-color: rgb(160, 158, 158);
+}
+
+.menu-main-menu-container{
+  
+  >ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    >li{
+      padding : 0 20px 0 0;
+
+      >a{
+        color: $snow;
+      }
+      >a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-widgetfooter-widget--lightwidget_categories{
+  >ul{
+    >li{
+      list-style: none;
+      >a{
+        color: $snow;
+      }
+      >a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.widget_recent_entries{
+  >ul{
+    >li{
+      list-style: none;
+      >a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .card {
+    // display: flex;
+    // flex-direction: column;
+    // width: 15%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: $double auto;
+    padding: 20px;
+    width: 300px;
+
+    .card-text{
+      .post-content{
+        display: none;
+      }
+    }    
+
+    .card-header {
+      margin-left: auto;
+      border-radius: 50%;
+      padding: $double $base;
+      background-color: $primary;
+      color: $snow;
+    }
+
+    .img-wrapper {
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 200px;
+        height: 206px;
+        margin: auto;
+      }
+    }
+
+    button {
+      padding: $base;
+      text-align: center;
+      border: 0;
+      background: transparent;
+      outline: none;
+    }
+    button:hover,button:focus{
+      outline: none;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .card-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .cost {
+        font-weight: bold;
+        color: $danger;
+      }
+
+      .discounted {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
